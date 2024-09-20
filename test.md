@@ -1,1 +1,1 @@
-Hello
+rong chương trình này, ta thấy được lỗ hổng buffer overflow nằm trong hàm vuln() là hàm get(). hàm get() có điểm yếu là không kiểm tra độ dài chuỗi đầu vào, nên ta có thể nhập vào vượt quá số lượng và đè lên các bytes khác, từ đó dẫn tới buffer overflow
