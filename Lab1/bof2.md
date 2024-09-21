@@ -1,4 +1,4 @@
-### Chi tiết Buffer-overflow trên file .c
+### Chi tiết Buffer-overflow trên file bof2.c
 ***
 #### Mục đích của bài này là dùng buffer-overflow để đổi giá trị của biến 'check' thành 0xdeadbeef
 Xem qua code ta có thể thấy lỗ hỏng nó đến từ hàm fget(buf, 45, stdin). Vì vậy ta sẽ dùng buffer-overflow để làm tràn biến buf xuống phần của biến check và cái phần được tràn vào biến check sẽ là giá trị 0xdeadbeef
