@@ -14,7 +14,8 @@ Xem qua code ta có thể thấy lỗ hỏng nó đến từ hàm fget(buf, 45, 
 * Bước 2: Điểm qua stackframe
 
   
-  ![image](https://github.com/user-attachments/assets/12902432-9d37-4972-810c-0ce70de8af52)
+  ![image](https://github.com/user-attachments/assets/72d3f459-132e-4053-b7fd-f4ebdea0f608)
+
 
 
 
