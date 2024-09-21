@@ -32,7 +32,7 @@ Xem qua code ta có thể thấy lỗ hỏng nó đến từ hàm get(array) c�
 
   ta thấy mảng array chứa tối đa 200 bytes và ebp là 4 bytes nên ta cần truyền vào input 204 kí
   tự ngẫu nhiên và truyền thêm 4 bytes địa chỉ hàm secretFunc() nữa để đè lên return addr là ta có thể gọi hàm này
-* Bước 4: Thực hiền truyền input
+* Bước 4: Thực hiện truyền input
   ```
   echo $(python -c "print('a'*204 + '\x6b\x84\x04\x08')") | ./bof1.out
   ```
