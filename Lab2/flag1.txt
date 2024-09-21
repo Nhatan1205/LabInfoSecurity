@@ -1,0 +1,1 @@
+file rỗng, phải có để chạy ctf.c
