@@ -1,7 +1,7 @@
 ### Chi tiết Buffer-overflow trên file bof1.c
 ***
 #### Mục đích của bài này là dùng buffer-overflow để gọi được hàm secretFunc()
-Xem qua code ta có thể thấy lỗ hỏng nó đến từ hàm get(array) của hàm vuln(). Vì vậy ta sẽ dùng buffer-overflow để làm tràn biến array xuống phần return address và cái phần được tràn vào return adddress là địa chỉ của hàm secretFunc() thì lúc đó hàm secretFunc() sẽ được gọi
+Xem qua code ta có thể thấy lỗ hỏng nó đến từ hàm get(array) của hàm vuln(). Vì vậy ta sẽ dùng buffer-overflow để làm tràn biến array xuống phần return address và cái phần được tràn vào return adddres là địa chỉ của hàm secretFunc() thì lúc đó hàm secretFunc() sẽ được gọi
 
 
 ![image](https://github.com/user-attachments/assets/061f6e08-a811-4b5e-9e22-e625c0b706a3)
