@@ -20,7 +20,7 @@ Xem qua code ta có thể thấy lỗ hỏng nó đến từ hàm fget(buf, 45, 
 
 
   ta thấy mảng buf chứa tối đa 40 bytes nên ta cần truyền vào input 40 kí tự ngẫu nhiên và truyền thêm 4 bytes giá trị 0xdeadbeef nữa để đè lên giá trị hiện tại của biến check là ta có thể thay đổi thành giá trị mới 
-* Bước 3: Thực hiền truyền input
+* Bước 3: Thực hiện truyền input
   ```
   echo $(python -c "print('a'*40 + '\xef\xbe\xad\xde')") | ./bof2.out
   ```
