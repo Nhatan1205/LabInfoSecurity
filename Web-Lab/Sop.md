@@ -1,4 +1,4 @@
-#### 4. Tasks  
+![image](https://github.com/user-attachments/assets/9e2d4a9a-70d3-4ab1-bb36-f53faa26c29d)#### 4. Tasks  
 ***
 ##### 4.1. SOP lab
 ##### 4.1.1. Setup 
@@ -158,10 +158,37 @@ LocalStorage is empty (Storage >> Local Storage).
 ![image](https://github.com/user-attachments/assets/c9cd262c-d3a3-474c-84f4-4c9c4bc56ff1)
 
   * a) Define a new variable named first = 10. You can define either: with javascript in console: window.LocalStorage[“first”] = 100 or Add Item in Storage tab
-    
+    ![image](https://github.com/user-attachments/assets/62287155-74af-4294-8247-4804f55485c6)
+
   * b) Open sitea.com in a new tab. Can you access first variable in this tab? Change first to a new value, go back to the previous sitea.com tab, what is the value of first then.
+ 
+    
+    In new tab for sitea, i can access this var cause it stored
+    ![image](https://github.com/user-attachments/assets/043b25b7-a7cc-40b2-8281-e89b787d40b5)
+    I changed the value from 100 to 3000
+    ![image](https://github.com/user-attachments/assets/0bd6b9c9-227f-4124-aaa1-d9ad204704e9)
+    And when i back to previous tab sitea, it has changed to 3000
+    ![image](https://github.com/user-attachments/assets/6f1e2656-d788-4977-8eab-3cb4b24d4379)
+
   * c) Can you access first from siteb.com?
+    ![image](https://github.com/user-attachments/assets/268f28e2-a013-4fea-8a3d-4a04b2eabb4e)
+
+    No, i cant
+
   * d) Close all sitea.com tabs. How about first variable when sitea.com is re-opened.
+    ![image](https://github.com/user-attachments/assets/cb339a1d-67d5-4ae7-be46-0fd0c43f78f0)
+
+    It still remains the same
+
   * e) Close browser then re-open, does first variable still exist?
+    ![image](https://github.com/user-attachments/assets/c44de566-ddf1-452d-89cd-9ca09c957b59)
+
+    It still exists
+
   * f) What can you conclude about Local Storage?
+    localStorage is a web storage mechanism that allows you to store data with no expiration, persisting across sessions
 * Repeat the above steps from (a) to (e) but with Session Storage. What can you conclude about Session Storage?
+  ![image](https://github.com/user-attachments/assets/182b2a3e-29a1-4fe1-bd01-52a4ef8258ac)
+  => Session Storage is a web storage mechanism that allows you to store data for the duration of a single browser session
+  
+
