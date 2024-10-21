@@ -84,13 +84,30 @@ window.opener.location=”http://parentsite.com”.
 * Access http://parentsite.com then choose parentsite in list of sites on iframe 
 picker.
   * a) Can you access window.framea, window.frameb?.
+    ![image](https://github.com/user-attachments/assets/2c2a3175-d821-454d-815d-4ab8250c2c07)
+
+    Yes, i can
+
   * b) Can you access document.body of framea, frameb from parentsite?
+    ![image](https://github.com/user-attachments/assets/b39178bf-1f2d-4181-ac8f-30aa2b01527a)
+
+
+    No, it blocked me
 * Select sitea.com in list of sites on iframe picker.
+  ![image](https://github.com/user-attachments/assets/c6413789-1900-4ee4-9367-32e6c8be0dc5)
+
   * c) Can you access window.parentsite?
+
+    Yes, i can access window.parent
+
   * d) Can you access document.body object of parentsite.com? Which object of parentsite that 
-sitea can access? 
-*  Select parentsite.com in list of sites on iframe picker, define a variable named hello: var hello=” 
-world”
+sitea can access?
+
+    Some obj that i can acess:
+
+
+*  Select parentsite.com in list of sites on iframe picker, define a variable named hello: var hello=” world”
+
   * e) Can you access hello from sitea, siteb?
 ***
 ##### 4.1.4. Sending POST request to a site:
