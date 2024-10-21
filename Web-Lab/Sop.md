@@ -107,21 +107,61 @@ sitea can access?
 
 
 *  Select parentsite.com in list of sites on iframe picker, define a variable named hello: var hello=” world”
+  ![image](https://github.com/user-attachments/assets/62e9e58c-83c0-4957-aff0-80baab8c9de8)
 
   * e) Can you access hello from sitea, siteb?
+    ![image](https://github.com/user-attachments/assets/f325670c-7858-4271-acde-4dd8da89d4e0)
+
+    No, I cant access from both a&b
+
 ***
 ##### 4.1.4. Sending POST request to a site:
 * a) Access http://sitea.com/post.html
+  ![image](https://github.com/user-attachments/assets/f2a36d39-50c1-46c0-ad40-ddf03e637d30)
+
 * b) Type some text in textbox then click  “Submit query”. What would show up? Explain why you see that.
+  It nevigates to siteb.com. I can know this by the source code of this form
+  ![image](https://github.com/user-attachments/assets/aced3e38-b8b0-4685-be18-272a1be15bad)
+
 * c) Repeat step (a), toggle Web console >> Network (Ctrl + Shift + E)
+  ![image](https://github.com/user-attachments/assets/3248b3be-9cf4-4bac-a558-79942a7e1e98)
+
 * d) Repeat step (b), examine the request and response header. What can you conclude about POST form request.
+  Request:
+
+  ![image](https://github.com/user-attachments/assets/debf1031-50cc-4a27-a21c-7ccd8c8f7d7f)
+
+  Response:
+  ![image](https://github.com/user-attachments/assets/b707c64d-8a7b-4452-9b93-521544e0aeb7)
+
+  
+  The post method will store submission on request data
+  
+
+  
 ***
 ##### 4.1.5. Access image, stylesheet from other sites 
 * a) In the Inspector panel of sitea.com, can you change sitea’s image to image from siteb.com?
+  ![image](https://github.com/user-attachments/assets/303a3e7a-61b2-450d-9ea7-ee6947f3a0dd)
+
+  By change to img link from a.png to http://siteb.com/b.png => can the image A to B
+
 * b) In the Inspector panel of sitea.com, can you change the stylesheet to that of siteb.com?
+  ![image](https://github.com/user-attachments/assets/9f638797-b7a9-40d1-b0e8-5df6f44d401e)
+
+  Same with step a
+
 ***
 ##### 4.1.6. SOP applies to web storage 
 * Load www.sitea.com in one tab, open Web developer panel > Storage, check that the 
 LocalStorage is empty (Storage >> Local Storage).
-  * a) Define a new variable named first = 10. You can define either: with javascript in console: window.LocalStorage[“first”] = 100 or Add Item in Storage tab 
-  *
+![image](https://github.com/user-attachments/assets/c9cd262c-d3a3-474c-84f4-4c9c4bc56ff1)
+
+  * a) Define a new variable named first = 10. You can define either: with javascript in console: window.LocalStorage[“first”] = 100 or Add Item in Storage tab
+    
+  * b) Open sitea.com in a new tab. Can you access first variable in this tab? Change first to a new value, go back to the previous sitea.com tab, what is the value of first then.
+  * c) Can you access first from siteb.com?
+  * d) Close all sitea.com tabs. How about first variable when sitea.com is re-opened.
+  * e) Close browser then re-open, does first variable still exist?
+  * f) What can you conclude about Local Storage?
+* Repeat the above steps from (a) to (e) but with Session Storage. What can you conclude about Session Storage?
