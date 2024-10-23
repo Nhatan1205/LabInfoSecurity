@@ -191,12 +191,22 @@ Goal: we need to insert 16 + 4 bytes to overflow the return address. And when we
 
 **Question 3**: Make use of John the Ripper to disclose the password of all database users from the above exploit
 **Answer 3**:
+
+
 Use john the ripper to crack, i stored the password in file name hashes.txt copied from 
+
+
 ![image](https://github.com/user-attachments/assets/4d9aa8f8-ca44-40f6-9c69-000d167bfdf5)
+
+
 
 ![image](https://github.com/user-attachments/assets/70325ec1-8017-4a30-8526-a5a461a0f375)
 
+
+
 after excecuting it
+
+
 ![image](https://github.com/user-attachments/assets/a770a87a-6a76-4f81-9fbd-998878e76972)
 
 **Conclusion**: In this lab, we explored SQL injection vulnerabilities on the bWAPP application and used sqlmap to exploit them. We successfully extracted databases, tables, and user information. Then, we utilized John the Ripper to crack the hashed passwords of the users. This highlights the importance of securing web applications against common attacks such as SQL injections and strengthening password storage methods.
