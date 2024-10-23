@@ -162,7 +162,7 @@ Goal: we need to insert 16 + 4 bytes to overflow the return address. And when we
   Cookies: `3jksnj690ba8735oii5lilch06`
 
   
-* Press button submit:
+* Press button `go`:
   ![image](https://github.com/user-attachments/assets/8be81e2b-c7f2-47eb-8083-6a8d1ab81638)
 
 
@@ -173,6 +173,8 @@ Goal: we need to insert 16 + 4 bytes to overflow the return address. And when we
   python sqlmap.py -u "http://localhost:8025/sqli_2.php?movie=1" --cookie="PHPSESSID=3jksnj690ba8735oii5lilch06; security_level=0" --dbs
   ```
 * After running, it shows the database
+
+  
   ![image](https://github.com/user-attachments/assets/25002be4-923b-411e-802c-af3517454406)
 
 **Question 2**: Use sqlmap to get tables, users information
@@ -194,17 +196,19 @@ Goal: we need to insert 16 + 4 bytes to overflow the return address. And when we
 
 
 Use john the ripper to crack, i stored the password in file name hashes.txt copied from 
-
+``
+C:\Users\Win 10\AppData\Local\Temp\sqlmap_whvad_g8940
+``
 
 ![image](https://github.com/user-attachments/assets/4d9aa8f8-ca44-40f6-9c69-000d167bfdf5)
 
 
 
-![image](https://github.com/user-attachments/assets/70325ec1-8017-4a30-8526-a5a461a0f375)
+![image](https://github.com/user-attachments/assets/95f4e49d-6f1f-4ac4-baf1-0d1d18d130de)
 
 
 
-after excecuting it
+after executing it
 
 
 ![image](https://github.com/user-attachments/assets/a770a87a-6a76-4f81-9fbd-998878e76972)
